@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #fff0f5;
+    text-align: center;
+}
+
+header {
+    background-color: #db7093;
+    color: white;
+    padding: 30px 20px 10px;
+    border-bottom: 5px solid #fbb6d1;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.subheading {
+    font-style: italic;
+    font-size: 16px;
+    color: #ffe4ec;
+    margin-top: 5px;
+}
+
+nav {
+    background-color: #ffd6e8;
+    display: flex;
+    justify-content: center;
+    padding: 14px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+nav a {
+    color: #db7093;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #fbb6d1;
+    color: white;
+}
+
+.favorite-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 40px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.fav-card {
+    background-color: #ffe4ec;
+    color: #c06090;
+    padding: 30px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.fav-card:hover {
+    background-color: #fbb6d1;
+    color: white;
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #db7093;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}

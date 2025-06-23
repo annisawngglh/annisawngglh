@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>My Profile ✨</title>
+  <link rel="stylesheet" href="uasprofile.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&family=Sacramento&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>My Profile ✨</h1>
+        <p class="subheading">Get to know me better through this page 💖</p>
+    </header>
+
+    <nav>
+        <a href="uashome.html">Home</a>
+        <a href="uasprofile.html">Profile</a>
+        <a href="uasfavorite.html">Favorite</a>
+        <a href="uascontact.html">Contact</a>
+    </nav>
+
+  <div class="profile-container">
+    <h2 class="nama">Annisa Wening Galih 🌷</h2>
+    <img src="nisaempat.jpg" alt="Foto Annisa" class="foto-profile">
+    <p class="bio">A gentle soul blooming in a pastel world — where soft colors, quiet moments, and tiny joys become her favorite kind of magic. 💫</p>
+
+     <!-- 🎵 Backsound Kawaii Lullaby -->
+  <audio autoplay loop hidden>
+    <source src="https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Komiku/Its_time_for_adventure/Komiku_-_11_-_Faster_Train.mp3" type="audio/mpeg">
+  </audio>
+
+    <!-- Diary Buka Tutup -->
+    <div class="diary-book">
+      <button onclick="toggleBook()" class="book-toggle">📖 Buka / Tutup Diary</button>
+      <div class="book-pages" id="bookPages">
+        <div class="page left-page">
+          <div class="ornamen-top-left">🌸</div>
+          <h3>🌸 About Me</h3>
+          <p>
+            Hi, I’m Annisa 💕 I often find myself daydreaming in quiet moments, loving rainy days, lo-fi music, and pink skies. Welcome to my gentle world...
+          </p>
+        </div>
+        <div class="page right-page">
+          <div class="ornamen-top-right">🌷</div>
+          <h3>🌷 Closing</h3>
+          <p>
+            The world can be loud, but I choose to stay soft. Thanks for stopping by — may my words feel like a warm hug for your heart today 💌
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Diary Flip -->
+    <div class="diary-flip-container">
+      <h2>📖 My Diary</h2>
+      <div class="diary-flip">
+        <input type="radio" name="diary" id="page1" checked>
+        <input type="radio" name="diary" id="page2">
+        <input type="radio" name="diary" id="page3">
+        <input type="radio" name="diary" id="page4">
+        <input type="radio" name="diary" id="page5">
+
+        <div class="pages">
+          <div class="page-content" id="content1">
+            <p>Hello, my name is Annisa Wening Galih 💗<br>
+            <p>I’m a soft-hearted girl with big dreams. I love pink and black, but I also adore soft colors. I cherish peaceful days and find beauty in the quiet, simple things that hold meaning.</p>
+          </div>
+          <div class="page-content" id="content2">
+            <p>I’m a deep thinker, a dreamer, and someone who always tries to stay kind — even when days feel heavy. I truly believe that softness is a form of strength, not weakness ✨</p>
+          </div>
+          <div class="page-content" id="content3">
+            <p>I love journaling, listening to music, watching anime, taking cute photos, making vlogs, and collecting little things that bring me joy. I’m deeply in love with Naruto, pandas, and matcha — everyone close to me knows it well. But of course, there are many other things I love that I can’t even name one by one 🌷</p>
+          </div>
+          <div class="page-content" id="content4">
+            <p>I choose to live slowly and softly — not because life is easy, but because I choose peace. I value honesty, warmth, and safe spaces for the heart 💕</p>
+          </div>
+          <div class="page-content" id="content5">
+            <p>I hope this little corner feels like a warm hug. May you feel calm, understood, and loved — just like the soft world I dream of 🌈</p>
+          </div>
+        </div>
+
+        <div class="navigation">
+          <label for="page1">1</label>
+          <label for="page2">2</label>
+          <label for="page3">3</label>
+          <label for="page4">4</label>
+          <label for="page5">5</label>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sticky Note -->
+    <div class="sticky-note">
+      <h4>📝 Gentle Reminder</h4>
+      <p>You don’t need to rush. Take a deep breath, take it slow — your journey is unfolding with grace 💗</p>
+    </div>
+
+    <!-- Sparkle -->
+    <span class="sparkle one">✨</span>
+    <span class="sparkle two">✨</span>
+    <span class="sparkle three">✨</span>
+
+    <!-- Link Back -->
+    <div class="link-back">
+      <a href="uashome.html">← Back to Home</a>
+    </div>
+  </div>
+
+  <script>
+    function toggleBook() {
+      const book = document.getElementById("bookPages");
+      book.classList.toggle("open-book");
+    }
+  </script>
+</body>
+</html>

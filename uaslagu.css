@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff0f5;
+}
+
+header {
+  background-color: palevioletred;
+  padding: 30px;
+  text-align: center;
+  color: white;
+  border-bottom: 5px dashed mistyrose;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+header p {
+  margin-top: 10px;
+  font-style: italic;
+}
+
+nav a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: #ffedf1;
+  font-weight: bold;
+}
+
+main {
+  padding: 40px 20px;
+}
+
+.music-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  justify-content: center;
+}
+
+.music-card {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(255, 182, 193, 0.4);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.music-card:hover {
+  transform: scale(1.05);
+}
+
+.music-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.music-card h3 {
+  margin: 10px 0 5px;
+  font-size: 16px;
+}
+
+.music-card h3 a {
+  text-decoration: none;
+  color: deeppink;
+}
+
+.music-card h3 a:hover {
+  text-decoration: underline;
+}
+
+.music-card p {
+  margin-bottom: 12px;
+  font-size: 13px;
+  color: #666;
+  font-style: italic;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: gray;
+}

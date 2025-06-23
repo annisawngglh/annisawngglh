@@ -1,0 +1,188 @@
+/* 🌸 GLOBAL STYLE */
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #fff0f5;
+}
+
+header {
+    background-color: #db7093;
+    color: white;
+    padding: 30px 20px 10px;
+    border-bottom: 5px solid #fbb6d1;
+    text-align: center; /* tambahkan baris ini */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.subheading {
+    font-style: italic;
+    font-size: 16px;
+    color: #ffe4ec;
+    margin-top: 5px;
+}
+
+nav {
+    background-color: #ffd6e8;
+    display: flex;
+    justify-content: center;
+    padding: 14px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+nav a {
+    color: #db7093;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #fbb6d1;
+    color: white;
+}
+
+/* 💖 NAVBAR */
+nav {
+    background-color: #ffd6e8;
+    display: flex;
+    justify-content: center;
+    padding: 14px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+nav a {
+    color: #db7093;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #fbb6d1;
+    color: white;
+}
+
+/* 🧁 LAYOUT */
+.main {
+    display: flex;
+    padding: 20px;
+}
+
+/* 📦 CONTENT */
+.content {
+    flex: 3;
+    background-color: #fce4ec;
+    padding: 20px;
+    border-radius: 15px;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+/* 🩰 SIDEBAR */
+.sidebar {
+    flex: 1;
+    background-color: #ffe4ec;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+/* 🌸 QUOTES */
+.quote-harian {
+    background-color: #ffe4ec;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 14px;
+    font-style: italic;
+    color: #b8567f;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* 🎀 WELCOME BANNER */
+.welcome-banner {
+    background-color: #ffe4ec;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    color: #db7093;
+}
+
+.welcome-banner h2 {
+    margin-bottom: 8px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.welcome-banner p {
+    font-size: 16px;
+    font-style: italic;
+    color: #c06090;
+}
+
+/* 🎞️ SLIDER OTOMATIS */
+.auto-slider {
+    background-color: #ffe4e1;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    max-width: 500px;
+    margin: 0 auto 20px;
+}
+
+.slide-track {
+    display: flex;
+    width: calc(500px * 10);
+    animation: slide 25s linear infinite;
+}
+
+.slide {
+    flex-shrink: 0;
+    width: 500px;
+    height: 300px;
+    padding: 10px;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-500px); }
+    40% { transform: translateX(-1000px); }
+    60% { transform: translateX(-1500px); }
+    80% { transform: translateX(-2000px); }
+    100% { transform: translateX(0); }
+}
+
+.slider-description {
+    text-align: center;
+    font-style: italic;
+    color: palevioletred;
+    margin-top: 10px;
+}
+
+/* 🧁 FOOTER */
+footer {
+    background-color: palevioletred;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}

@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #fff0f5, #fefefe);
+}
+
+header {
+  background-color: palevioletred;
+  padding: 30px;
+  text-align: center;
+  color: white;
+  border-bottom: 4px dashed mistyrose;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+header p {
+  margin-top: 10px;
+  font-style: italic;
+}
+
+nav a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: #ffeef3;
+  font-weight: bold;
+}
+
+main {
+  padding: 40px 20px;
+}
+
+.drink-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  justify-content: center;
+}
+
+.drink-card {
+  border-radius: 50px 50px 15px 15px;
+  padding: 20px;
+  height: 220px;
+  text-align: center;
+  color: #333;
+  box-shadow: 0 5px 15px rgba(255, 182, 193, 0.3);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.drink-card:hover {
+  transform: scale(1.05);
+}
+
+.drink-card h2 {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+.drink-card p {
+  font-size: 13px;
+  padding: 0 10px;
+  font-style: italic;
+}
+
+/* Warna label botol pastel */
+.pastel-pink {
+  background-color: #ffe4ec;
+}
+
+.pastel-brown {
+  background-color: #f5e4d7;
+}
+
+.pastel-green {
+  background-color: #e2f7e1;
+}
+
+.pastel-purple {
+  background-color: #f3e7f8;
+}
+
+.pastel-blue {
+  background-color: #e1f4ff;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: gray;
+}

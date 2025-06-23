@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Koleksi Barang Favorit</title>
+  <link rel="stylesheet" href="uaskoleksi.css">
+</head>
+<body>
+
+  <header>
+    <h1>💼 Koleksi Barang Favoritku 🌟</h1>
+    <p>Harta karun kecil yang bikin hatiku bahagia~</p>
+    <nav>
+      <a href="uashome.html">Home</a>
+      <a href="uasprofile.html">Profile</a>
+      <a href="uasfavorite.html">Favorite</a>
+      <a href="uascontact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="accordion-grid">
+
+      <div class="accordion-item">
+        <button class="accordion-title">Mainan Naruto</button>
+        <div class="accordion-content">
+          <img src="narutokoleksi.jpg" alt="Mainan Naruto">
+          <p>Koleksi kecil Naruto favoritku yang selalu nemenin di meja belajar!</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-title">Alat Tulis</button>
+        <div class="accordion-content">
+          <img src="alattulis.jpg" alt="Alat Tulis">
+          <p>Pensil, pulpen, dan sticky notes lucu yang bikin semangat nulis~</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-title">Aksesoris</button>
+        <div class="accordion-content">
+          <img src="aksesoris.jpg" alt="Aksesoris">
+          <p>Anting, gelang, dan jepitan rambut yang bikin tampil lebih gemes!</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-title">Tas</button>
+        <div class="accordion-content">
+          <img src="tas.jpg" alt="Tas">
+          <p>Berbagai tas lucu yang aku simpan baik-baik kayak harta karun!</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-title">Parfum</button>
+        <div class="accordion-content">
+          <img src="parfum.jpg" alt="Parfum">
+          <p>Aroma manis dan elegan yang selalu bikin aku lebih percaya diri~</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 by Annisa. Koleksi penuh cinta dan kenangan 🌈</p>
+  </footer>
+
+  <script>
+    const items = document.querySelectorAll('.accordion-title');
+    items.forEach(item => {
+      item.addEventListener('click', () => {
+        const content = item.nextElementSibling;
+        content.classList.toggle('active');
+      });
+    });
+  </script>
+
+</body>
+</html>

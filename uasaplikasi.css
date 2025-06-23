@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fffdf8;
+}
+
+header {
+  background-color: palevioletred;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  border-bottom: 4px dashed mistyrose;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+header p {
+  margin-top: 10px;
+  font-style: italic;
+}
+
+nav a {
+  margin: 0 10px;
+  color: #ffeef2;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  padding: 30px 20px;
+}
+
+.scrapbook {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.memo {
+  width: 180px;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  position: relative;
+  background-color: #fff;
+  transform: rotate(-2deg);
+  transition: transform 0.3s ease;
+}
+
+.memo:hover {
+  transform: rotate(0deg) scale(1.03);
+}
+
+.memo img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.memo h3 {
+  margin: 0;
+  font-size: 18px;
+  color: palevioletred;
+}
+
+.memo p {
+  font-size: 13px;
+  color: #444;
+  margin-top: 5px;
+  font-style: italic;
+}
+
+/* Memo pastel warna-warni */
+.memo.pink {
+  background-color: #ffe6f0;
+}
+
+.memo.yellow {
+  background-color: #fff9c4;
+}
+
+.memo.blue {
+  background-color: #e1f5fe;
+}
+
+.memo.green {
+  background-color: #e0f7fa;
+}
+
+.memo.purple {
+  background-color: #f3e5f5;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: gray;
+  font-size: 14px;
+}

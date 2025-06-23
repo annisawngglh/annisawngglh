@@ -1,0 +1,300 @@
+body {
+  background-color: #fff0f5;
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #fff0f5;
+    text-align: center;
+}
+
+header {
+    background-color: #db7093;
+    color: white;
+    padding: 30px 20px 10px;
+    border-bottom: 5px solid #fbb6d1;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.subheading {
+    font-style: italic;
+    font-size: 16px;
+    color: #ffe4ec;
+    margin-top: 5px;
+}
+
+nav {
+    background-color: #ffd6e8;
+    display: flex;
+    justify-content: center;
+    padding: 14px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+nav a {
+    color: #db7093;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #fbb6d1;
+    color: white;
+}
+
+/* PROFILE */
+.profile-container {
+  background-color: #fce4ec;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 700px;
+  margin: 30px auto;
+  position: relative;
+}
+
+.nama {
+  font-family: 'Sacramento', cursive;
+  font-size: 36px;
+  color: #db7093;
+  margin-bottom: 10px;
+}
+
+.foto-profile {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-bottom: 15px;
+}
+
+.bio {
+  font-size: 16px;
+  color: #c06090;
+  font-style: italic;
+  margin-bottom: 25px;
+}
+
+/* DIARY BUKU */
+.diary-book {
+  margin-top: 40px;
+}
+
+.book-toggle {
+  background-color: #fbb6d1;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: 0.3s ease;
+}
+
+.book-toggle:hover {
+  background-color: #db7093;
+}
+
+.book-pages {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.6s ease;
+  position: relative;
+}
+
+.open-book {
+  opacity: 1;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.page {
+  width: 220px;
+  height: 220px;
+  background-color: #fff0f5;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  background-image: repeating-linear-gradient(
+    to bottom,
+    #ffe4ec,
+    #ffe4ec 28px,
+    #fddde6 28px,
+    #fddde6 30px
+  );
+  font-family: 'Sacramento', cursive;
+  font-size: 17px;
+  color: #c06090;
+  line-height: 1.8;
+  overflow-y: auto;
+  position: relative;
+}
+
+.page h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #db7093;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.ornamen-top-left,
+.ornamen-top-right {
+  position: absolute;
+  font-size: 20px;
+  opacity: 0.7;
+}
+
+.ornamen-top-left { top: 10px; left: 15px; }
+.ornamen-top-right { top: 10px; right: 15px; }
+
+.book-pages::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background-color: #f8a9c4;
+  z-index: 0;
+}
+
+/* DIARY FLIP */
+.diary-flip-container {
+  margin-top: 40px;
+}
+
+.diary-flip input[type="radio"] {
+  display: none;
+}
+
+.pages .page-content {
+  width: 300px;
+  height: 200px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #ffe4ec;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  font-family: 'Sacramento', cursive;
+  font-size: 18px;
+  color: #c06090;
+  display: none;
+  animation: flipIn 0.6s ease-in-out;
+}
+
+.navigation {
+  margin-top: 20px;
+}
+
+.navigation label {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 28px;
+  border-radius: 50%;
+  background-color: #fbb6d1;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0 6px;
+  transition: background-color 0.3s;
+}
+
+.navigation label:hover {
+  background-color: #db7093;
+}
+
+#page1:checked ~ .pages #content1,
+#page2:checked ~ .pages #content2,
+#page3:checked ~ .pages #content3,
+#page4:checked ~ .pages #content4,
+#page5:checked ~ .pages #content5 {
+  display: block;
+}
+
+@keyframes flipIn {
+  from { transform: rotateY(-90deg); opacity: 0; }
+  to { transform: rotateY(0); opacity: 1; }
+}
+
+/* STICKY NOTE */
+.sticky-note {
+  background-color: #fffacd;
+  border: 2px dashed #fbb6d1;
+  padding: 15px;
+  width: 220px;
+  margin: 30px auto 10px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 8px rgba(0,0,0,0.1);
+  font-size: 14px;
+  color: #a05278;
+  font-style: italic;
+  position: relative;
+  transform: rotate(-2deg);
+}
+
+.sticky-note::before {
+  content: '📌';
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  font-size: 18px;
+}
+
+/* SPARKLE */
+@keyframes sparkle {
+  0% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.2); }
+  100% { opacity: 0.3; transform: scale(1); }
+}
+
+.sparkle {
+  position: absolute;
+  font-size: 18px;
+  opacity: 0.5;
+  animation: sparkle 3s infinite;
+  color: #f8a9c4;
+}
+
+.sparkle.one { top: 10px; left: 50px; animation-delay: 0s; }
+.sparkle.two { top: 30px; right: 60px; animation-delay: 1s; }
+.sparkle.three { bottom: 10px; left: 80px; animation-delay: 2s; }
+
+.link-back {
+  margin-top: 40px;
+}
+
+.link-back a {
+  text-decoration: none;
+  color: white;
+  background-color: #db7093;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.link-back a:hover {
+  background-color: #e88fb1;
+}
